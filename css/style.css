@@ -1,0 +1,115 @@
+/* RESET AND VARIABLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* COLORS */
+    --color-bg: hsl(228, 19%, 5%);
+    --color-bg-alt: hsl(213, 24%, 16%);
+    --color-main: hsl(176, 44%, 64%);
+    --color-main-alt: hsla(176, 96%, 69%, 0.25);
+    --color-main-alt2: hsla(176, 50%, 30%, 0.5);
+    --gradient: linear-gradient(135deg, var(--color-bg-alt), var(--color-main-alt2));
+}
+
+/* STRUCTURES */
+body {
+    background-color: var(--color-bg);
+    height: 100vh;
+}
+
+header {
+    color: var(--color-main);
+    flex-grow: 0.5;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+}
+
+main {
+    background-color: var(--color-bg-alt);
+    flex-grow: 2;
+    width: 65%;
+    border-radius: 5%;
+}
+
+button {
+    background-color: transparent;
+    border-color: var(--color-main);
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+button:nth-child(2) {
+    margin: 0 2.5rem;
+}
+
+button::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: var(--gradient);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 350ms ease-out;
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+footer {
+    width: 100%;
+    margin-top: 5rem;
+    border-top: 1px solid var(--color-main-alt);
+}
+
+address {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CLASSES AND IDS */
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.whiteFont {
+    color: white;
+}
+
+.buttonFont {
+    font-size: 1.5rem;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.underline {
+    border-bottom: 1px solid transparent;
+    transition: 250ms ease-in;
+}
+
+.underline:hover {
+    border-color: white;
+}
+
+#stopwatch {
+    font-size: 3.5rem;
+    margin-bottom: 3.5rem;
+    font-family: "Titillium Web", sans-serif;
+}

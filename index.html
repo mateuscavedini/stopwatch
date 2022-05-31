@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro - Stopwatch</title>
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Titillium+Web&display=swap" rel="stylesheet">
+    
+</head>
+<body class="flex column">
+    <header class="flex column">
+        <h1>Cronômetro - JavaScript</h1>
+        <h2>Stopwatch</h2>
+    </header>
+
+    <main class="flex column">
+        <div class="whiteFont" id="stopwatch">
+            <p><span id="secs">00</span>:<span id="tens">00</span></p>
+        </div>
+
+        <div id="buttons">
+            <button class="whiteFont buttonFont" id="start">START</button>
+            <button class="whiteFont buttonFont" id="stop">STOP</button>
+            <button class="whiteFont buttonFont" id="reset">RESET</button>
+        </div>
+    </main>
+    
+    <footer>
+        <address class="flex column whiteFont">
+            <p>Mateus Cavedini Pereira</p>
+            <p><a class="whiteFont" href="https://github.com/mateuscavedini" target="_blank"><span class="underline">GitHub</span></a> | <a class="whiteFont" href="mailto:"mateuscvdn@gmail.com"><span class="underline">Email</span></a></p>
+        </address>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
